@@ -7,7 +7,7 @@ while ($line = fgets(STDIN)) {
     $record = str_getcsv($line);
     $record[2] = $record[2] == '(no genres listed)' ? [] : explode("|", $record[2]);
     $pos = mb_strrpos($record[1], '(');
-    $year = trim(mb_substr($record[1], $pos, mb_strlen($record[1])),"()");
+    $year = trim(mb_substr($record[1], $pos, mb_strlen($record[1])),"() ");
     $title = trim(mb_substr($record[1], 0, $pos));
     $records[] = [
         'id' => $record[0],
