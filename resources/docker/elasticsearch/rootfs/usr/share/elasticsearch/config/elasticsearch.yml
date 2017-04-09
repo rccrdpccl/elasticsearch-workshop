@@ -1,0 +1,9 @@
+
+cluster.name: training
+bootstrap.memory_lock: true
+discovery.zen.ping.unicast.hosts: ["es1"]
+discovery.zen.minimum_master_nodes: 1
+network.host: [_eth0_, _local_]
+node.master: true
+node.data: true
+node.name: ${HOSTNAME}
