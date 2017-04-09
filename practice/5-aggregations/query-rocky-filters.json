@@ -1,0 +1,15 @@
+{
+    "query": {
+        "match": {
+            "title": "rocky"
+        }
+    },
+    "aggs": {
+        "genres": {
+            "terms": {"field": "genres"}
+        },
+        "years": {
+            "terms": {"field": "year"}
+        }
+    }
+}

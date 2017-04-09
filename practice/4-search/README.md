@@ -6,5 +6,5 @@ Let's explore the data:
 - Search for all Rocky movies
 - Get only Rocky IV
 - Get all Rocky movies of genre Action
-- Get all Rocky movies, or Rambo
+- Get all Rocky action movies, or Rambo
 - Get Action movies from 2010 to 2015. Explore the results with pagination

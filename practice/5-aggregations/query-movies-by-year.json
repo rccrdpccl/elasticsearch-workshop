@@ -1,0 +1,11 @@
+{
+  "size": 0,
+  "aggs" : {
+    "year_of_movies" : {
+      "date_histogram" : {
+        "field" : "year",
+        "interval" : "year"
+      }
+    }
+  }
+}

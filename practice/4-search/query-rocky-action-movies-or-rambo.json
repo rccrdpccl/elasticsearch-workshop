@@ -1,0 +1,21 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "bool": {
+                        "must": [
+                            {"match": { "title": "rocky"} },
+                            {"match": { "genres": "Action"} }
+                        ]
+                    }
+                },
+                {
+                    "match": {
+                        "title": "Rambo"
+                    }
+                }
+            ]
+        }
+    }
+}

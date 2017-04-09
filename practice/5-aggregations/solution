@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ELASTICSEARCH_HOST=${ELASTICSEARCH_HOST:-"localhost:9200"}
+
+for query in $(ls -1 query*.json); do
+    curl -sS -XPOST "${ELASTICSEARCH_HOST}/movies/movie/_search" --data @"$query" | jq .
+done

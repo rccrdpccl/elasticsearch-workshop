@@ -1,0 +1,15 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": { "genres": "Sci-Fi"} }
+      ]
+    }
+  },  
+  "aggs" : {
+    "genres" : {
+      "terms" : { "field" : "genres" }
+    }
+  }
+}

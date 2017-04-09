@@ -3,22 +3,10 @@
         "movie": {
             "properties": {
                 "genres": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
+                    "type": "keyword"
                 },
                 "id": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
+                    "type": "integer"
                 },
                 "title": {
                     "type": "text",
@@ -30,13 +18,7 @@
                     }
                 },
                 "year": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
+                    "type": "date"
                 }
             }
         }

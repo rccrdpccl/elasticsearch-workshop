@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ELASTICSEARCH_HOST=${ELASTICSEARCH_HOST:-"localhost:9200"}
+
+curl -sS -XPOST "${ELASTICSEARCH_HOST}/movies/movie/0" --data @document.json

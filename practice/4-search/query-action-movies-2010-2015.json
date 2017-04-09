@@ -1,0 +1,14 @@
+{
+    "from": 0,
+    "size": 100,
+    "query": {
+        "bool": {
+            "must": [
+                {"match": { "genres": "Action"} }
+            ],
+            "filter": [
+                {"range": {"year": {"gte": "2010", "lte": "2015" }}}
+            ]
+        }
+    }
+}

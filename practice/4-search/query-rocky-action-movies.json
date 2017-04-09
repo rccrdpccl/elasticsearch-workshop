@@ -1,0 +1,10 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"match": { "title": "rocky"} },
+        {"match": { "genres": "Action"} }
+      ]
+    }
+  }
+}

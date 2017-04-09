@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ELASTICSEARCH_HOST=${ELASTICSEARCH_HOST:-"localhost:9200"}
+
+curl -s -XPUT "${ELASTICSEARCH_HOST}/_bulk" --data-binary @bulk.json
